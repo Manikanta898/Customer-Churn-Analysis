@@ -1,21 +1,15 @@
-# firstone
-this is first one
-import java.awt.*;
+public UndoableTextArea(String string, int rows, int columns)
 
-class UndoableTextArea extends TextArea implements StateEditable
+{ super(string, rows,columns); initUndoable();
 
-( private final static String KEY_STATE="UndoableTextAreaKey";
+} public UndoableTextArea(String string, int rows, int columns, int scrollbars)
 
-private boolean textChanged-false;
+super(string, rows, columns, scrollbars); initUndoable();
 
-private UndoManager undoManager;
+I public boolean undo(){
 
-private StateEdit currentEdit;
+undoManager.undo(); return true;
 
-public UndoableTextArea() (
+{
 
-super(); initUndoable();
-
-public UndoableTextArea(String string) (
-
-super(string); initUndoable();
+try{
