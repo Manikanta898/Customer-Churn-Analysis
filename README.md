@@ -59,8 +59,16 @@ The following datasets were used:
 ## Files Included
 
 - **Customer_Churn_Analysis.ipynb**: Main notebook with full code
-- **Customer_Churn_Data_Large.xlsx**: Original dataset (if included)
-- **README.md**: Project overview
+- **Customer_Churn_Data_Large.xlsx**: Original dataset
+
+## How to Use
+
+1. Clone the repository:  
+   `git clone https://github.com/Manikanta898/Customer-Churn-Analysis.git`
+2. Install dependencies:  
+   `pip install -r requirements.txt` or manually install required libraries like `pandas`, `numpy`, `scikit-learn`, etc.
+3. Run the Jupyter notebook (`Customer_Churn_Analysis.ipynb`) to explore the analysis and model results.
+
 
 ## GitHub Repository
 
