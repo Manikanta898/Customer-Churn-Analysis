@@ -1,35 +1,67 @@
-# Customer Churn at Orange Telecom
+# Customer Churn Analysis
 
-An exploratory data analysis project on the given dataset to understandand Mitigating Customer Churn.
+This project focuses on predicting customer churn by analyzing various behavioral and demographic data. The goal is to help businesses identify at-risk customers and take proactive retention measures.
 
-## Table of Contents
-- [Getting Started](#getting-started)
-- [Data Sources](#data-sources)
-- [File Descriptions](#file-descriptions)
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Technologies Used](#technologies-used)
-- [Usage](#usage)
+## Project Summary
 
-## Getting Started
-To run the analysis locally, clone this repository and install the dependencies.
+This end-to-end churn analysis includes:
 
-## Data Sources
-The data used in this project was sourced from Telecom Churn.csv.
+- Data collection and merging from multiple sources
+- Exploratory Data Analysis (EDA)
+- Data cleaning and preprocessing
+- Feature engineering and encoding
+- Model selection and hyperparameter tuning
+- Model evaluation and business recommendations
 
-## File Descriptions
-- Telecom_Churn_Analysis_EDA_Submission.ipynb : Colab notebook containing the exploratory data analysis.
-- Telecom Churn.csv : Folder containing the raw and processed datasets.
+## Dataset Overview
 
-## Exploratory Data Analysis
-In the Telecom_Churn_Analysis_EDA_Submission.ipynb notebook, we explored the following aspects of the given data:
-- Correlation between relevant numerical variables.
-- Price distribution across different locations.
-- Data Visualization Charts.
+The following datasets were used:
 
-## Technologies Used
-- Python 3
-- Colab Notebook
-- Pandas, Matplotlib, Numpy, Seaborn
+- **Customer Demographics** – Age, gender, marital status, income level
+- **Transaction History** – Purchase frequency, amount spent, product category
+- **Customer Service** – Interaction type, resolution status
+- **Churn Status** – Target label (Active / Churned)
 
-## Usage
-To reproduce the analysis, open  Telecom_Churn_Analysis_EDA_Submission.ipynb  in Colab Notebook and execute the cells sequentially.
+## Key Steps
+
+### Exploratory Data Analysis
+
+- Identified patterns in churn rate by gender, age, and resolution outcomes
+- Analyzed customer value through spending patterns
+- Visualized relationships between features and churn
+
+### Data Preprocessing
+
+- Handled missing values (dropped or imputed)
+- Removed outliers using Z-score method
+- Standardized numerical features
+- Applied one-hot encoding to categorical variables
+
+### Model Building
+
+- Performed stratified train-test split
+- Used Random Forest Classifier with GridSearchCV for tuning
+- Evaluated using F1-score and ROC-AUC
+
+## Model Performance
+
+- **Accuracy**: 90%
+- **ROC-AUC**: 0.95
+- **Precision and recall** balanced for both churned and active customers
+
+## Recommendations & Business Implications
+
+- Target high-spending but potentially churning customers with loyalty incentives
+- Improve resolution processes, especially for unresolved or repeated issues
+- Focus retention campaigns on segments with higher churn risk (e.g., certain age groups or income levels)
+- Leverage churn predictors to develop real-time alerts for at-risk customers
+
+## Files Included
+
+- **Customer_Churn_Analysis.ipynb**: Main notebook with full code
+- **Customer_Churn_Data_Large.xlsx**: Original dataset (if included)
+- **README.md**: Project overview
+
+## GitHub Repository
+
+[https://github.com/Manikanta898/Customer-Churn-Analysis](https://github.com/Manikanta898/Customer-Churn-Analysis)
